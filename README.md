@@ -23,6 +23,12 @@ decryption. For example:
 This class includes methods for working in parallel in the CPU. This speeds up the process for giant inputs, but it's not 
 adequate in every case.
 
+## Available Methods
+* `string EncodeString(string str)`
+* `string EncodeStringParallel(string str)`
+* `void EncodeFile(string filepath)`
+* `void EncodeFileParallel(string filepath)`
+
 ## How to use the Demo Program
 
 It is a command-line program. You need to pass 3 arguments: mode, data, and key. Currently, the available modes are
