@@ -1,7 +1,7 @@
-﻿# Enhanced-XOR-Encryption-System
+# Enhanced-XOR-Encryption-System
 
 This is a class that combines XOR bit operations with SHA512 hashing to provide a simple but efficient way to encrypt
-files and strings. To speed up the process, it uses Task to process each part of the input in parallel in the CPU.
+files and strings.
 
 ## How it works
 
@@ -20,8 +20,8 @@ decryption. For example:
   =00100111 (result byte)
  ```
 
-The program can output the result in the console or write it to a file. This class has methods for working in parallel
-in the CPU. This speeds up the process for giant inputs, but it's not adequate in every case.
+This class includes methods for working in parallel in the CPU. This speeds up the process for giant inputs, but it's not 
+adequate in every case.
 
 ## How to use the Demo Program
 
@@ -35,6 +35,7 @@ Examples:
 * `DemoProgram.exe string "Super Secret Text" 123456`
 
 ## Performance
+Benchmark of the methods to encrypt strings, using BenchmarkDotNet:
 
 ```
 BenchmarkDotNet=v0.13.0, OS=Windows 10.0.19041.1052 (2004/May2020Update/20H1)
